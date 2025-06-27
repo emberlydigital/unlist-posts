@@ -1,10 +1,10 @@
 # Unlist Posts & Pages #
-**Contributors:** [brainstormforce](https://profiles.wordpress.org/brainstormforce/), [nikschavan](https://profiles.wordpress.org/nikschavan/)
+**Contributors:** [emberlydigital](https://github.com/emberlydigital), [brainstormforce](https://profiles.wordpress.org/brainstormforce/), [nikschavan](https://profiles.wordpress.org/nikschavan/)
 **Donate link:** https://www.paypal.me/BrainstormForce
 **Tags:** post, unlist posts, hide posts,
 **Requires at least:** 4.6
-**Tested up to:** 6.5
-**Stable tag:** 1.1.9
+**Tested up to:** 6.8
+**Stable tag:** 2.0.0
 **License:** GPLv2 or later
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,11 +17,6 @@ Unlisted means your post/page will not come up in search results or on anywhere 
 The Post could still be seen by anyone, but only if they guess the link!
 
 The plugin updates MySQL query directly in WP_Query class of WordPress to leave out the posts which are unlisted by the user. As this modifies the core WP_Query, this also works very well with all the plugins which pull out posts/pages from database by using WP_Query, For eg. Posts slider plugins, <a href="https://www.ultimatebeaver.com/modules/advanced-posts/?utm_source=wp-repo&utm_campaign=unlist-posts&utm_medium=other-plugins">Advanced Posts</a> in <a href="https://www.ultimatebeaver.com/?utm_source=wp-repo&utm_campaign=unlist-posts&utm_medium=other-plugins">Ultimate Addon for Beaver Builder</a> etc.
-
-[Try it out on a free dummy site](https://bsf.io/unlist-posts-demo)
-
-### Supported & Actively Developed ###
-Need help with something? Have an issue to report? [Get in touch](https://github.com/Nikschavan/unlist-posts "Unlist Posts & Pages on GitHub"). with us on GitHub.
 
 ### Limitations Of the Plugin ###
 
@@ -38,6 +33,10 @@ Need help with something? Have an issue to report? [Get in touch](https://github
 Just select option "Unlist Post" in any post of any type and that post will be hidden from the whole site, it can be only accessed if you have the direct link to the post.
 
 ## Changelog ##
+
+ ### 2.0.0 ###
+- Forked and development taken over by Clarion since package was deprecated for the last 3 major releases.
+
 
 ### 1.1.9 ###
 - Improvement: Comments for unlisted posts were hidden, These should be displayed now.
