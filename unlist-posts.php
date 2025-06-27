@@ -5,6 +5,8 @@
  * Author:          Clarion
  * Text Domain:     unlist-posts
  * Version:         2.0.0
+ * License:         GPLv2
+ * License URI:     https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * @package         Hide_Post
  */
