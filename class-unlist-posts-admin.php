@@ -121,7 +121,7 @@ class Unlist_Posts_Admin {
 		}
 
 		// if our current user can't edit this post, bail.
-		if ( ! current_user_can( 'edit_posts' ) ) {
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
 			return;
 		}
 
