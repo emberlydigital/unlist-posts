@@ -112,8 +112,11 @@ class Unlist_Posts_Admin {
 			return;
 		}
 
+		// grab nonce, unslash, and sanitize
+		$nonce = isset( $_POST['unlist_post_nounce'] ) ? sanitize_text_field( wp_unslash( $_POST['unlist_post_nounce'] ) ) : '';
+
 		// if our nonce isn't there, or we can't verify it, bail.
-		if ( ! isset( $_POST['unlist_post_nounce'] ) || ! wp_verify_nonce( $_POST['unlist_post_nounce'], 'unlist_post_nounce' ) ) {
+		if ( ! wp_verify_nonce( $nonce, 'unlist_post_nounce' ) ) {
 			return;
 		}
 
